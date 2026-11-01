@@ -75,7 +75,7 @@ export function Spinner({ size = 20 }: { size?: number }) {
 }
 
 export function EmptyState({ title, subtitle, icon: Icon = Package }: {
-  title: string; subtitle?: string; icon?: React.ComponentType<{ size?: number; className?: string }>
+  title: string; subtitle?: string; icon?:LucideIcon>
 }) {
   return (
     <div className="flex flex-col items-center justify-center py-16 text-center">
