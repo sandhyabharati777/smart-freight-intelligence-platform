@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import type { LucideIcon } from 'lucide-react'
+
 import type { ShipmentStatus, RiskLevel, ShipmentMode } from '@/types'
 import {
   Plane, Ship, Truck, Train, GitMerge,
