@@ -1,4 +1,5 @@
 import clsx from 'clsx'
+import type { LucideIcon } from 'lucide-react'
 import type { ShipmentStatus, RiskLevel, ShipmentMode } from '@/types'
 import {
   Plane, Ship, Truck, Train, GitMerge,
@@ -23,11 +24,11 @@ const RISK_CONFIG: Record<RiskLevel, { label: string; class: string }> = {
   critical: { label: 'Critical', class: 'badge-risk-critical' },
 }
 
-const MODE_ICONS: Record<ShipmentMode, React.ComponentType<{ size?: number; className?: string }>> = {
-  air:        Plane,
-  sea:        Anchor,
-  road:       Truck,
-  rail:       Train,
+const MODE_ICONS: Record<ShipmentMode, LucideIcon> = {
+  air: Plane,
+  sea: Anchor,
+  road: Truck,
+  rail: Train,
   multimodal: GitMerge,
 }
 
@@ -102,7 +103,7 @@ export function StatCard({
 }: {
   label: string
   value: string | number
-  icon?: React.ComponentType<{ size?: number; className?: string }>
+ icon?: LucideIcon
   trend?: string
   color?: string
 }) {
