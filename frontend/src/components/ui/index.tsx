@@ -1,9 +1,10 @@
 import clsx from 'clsx'
 import type { ShipmentStatus, RiskLevel, ShipmentMode } from '@/types'
-import { 
+import {
   Plane, Ship, Truck, Train, GitMerge,
   AlertTriangle, CheckCircle2, Clock, XCircle,
-  Package, Anchor
+  Package, Anchor,
+  type LucideIcon
 } from 'lucide-react'
 
 const STATUS_CONFIG: Record<ShipmentStatus, { label: string; class: string }> = {
