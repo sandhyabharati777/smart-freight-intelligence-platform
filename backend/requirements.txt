@@ -19,3 +19,4 @@ redis==5.2.1
 # Optional: Neo4j
 neo4j==5.27.0
 asyncpg==0.30.0
+bcrypt==4.2.1
